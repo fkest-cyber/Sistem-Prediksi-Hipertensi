@@ -1,0 +1,36 @@
+Scroll dan isi semua form (usia, BMI, tekanan darah, dll)
+Klik tombol "🔍 PREDIKSI RISIKO SEKARANG"
+Lihat hasil prediksi dengan gauge chart & rekomendasi
+Akses aplikasi:
+
+Local: http://localhost:8501
+Network: http://192.168.1.9:8501 (dari HP/laptop lain di WiFi sama)
+
+
+"Pengembangan Sistem Prediksi Risiko Hipertensi Berbasis Machine Learning dengan Algoritma Gradient Boosting untuk Deteksi Dini dan Pencegahan Penyakit Kardiovaskular"
+
+
+Hipertensi adalah faktor risiko utama penyakit kardiovaskular (PKV) dan berkontribusi besar terhadap kematian akibat stroke dan penyakit jantung koroner di seluruh dunia. Berbagai studi global melaporkan bahwa hipertensi berperan terhadap kurang lebih dua pertiga kematian akibat stroke dan sekitar separuh kejadian penyakit jantung koroner, sehingga menjadikannya salah satu determinan utama morbiditas dan mortalitas kardiovaskular secara global. Deteksi dan manajemen hipertensi pada fase awal terbukti mampu menurunkan risiko komplikasi PKV secara signifikan, sehingga organisasi kesehatan internasional menempatkan deteksi dini sebagai pilar utama pencegahan dan pengendalian penyakit tidak menular.
+
+Meskipun demikian, di banyak negara, termasuk negara berpendapatan menengah, akses terhadap skrining tekanan darah dan penilaian faktor risiko secara berkala masih terbatas. Keterbatasan tenaga kesehatan, sarana pelayanan primer, serta rendahnya kesadaran masyarakat untuk melakukan pemeriksaan rutin menyebabkan banyak individu dengan hipertensi tidak terdiagnosis, tidak diobati, atau tidak terkontrol dengan baik. Selain itu, alat bantu prediksi risiko yang praktis, terstandar, dan mudah digunakan di layanan primer maupun oleh masyarakat umum masih relatif terbatas. Kondisi ini menghambat upaya intervensi dini dan menyebabkan peluang pencegahan komplikasi PKV menjadi tidak optimal.
+
+Perkembangan teknologi kecerdasan buatan, khususnya machine learning, membuka peluang untuk mengembangkan model prediksi risiko hipertensi yang mampu mengintegrasikan berbagai faktor risiko (demografis, klinis, dan gaya hidup) menjadi estimasi probabilitas risiko yang lebih akurat. Algoritma Gradient Boosting dikenal memiliki kemampuan yang baik dalam menangkap hubungan nonlinier dan interaksi antar-variabel, sehingga berpotensi memberikan kinerja prediksi yang tinggi untuk masalah klasifikasi risiko kesehatan. Jika model prediksi ini diintegrasikan ke dalam sistem berbasis web yang user‑friendly, maka dapat dibentuk sebuah alat skrining risiko hipertensi yang dapat diakses secara luas, termasuk oleh masyarakat umum, sekaligus menjadi decision support bagi tenaga kesehatan dalam mengidentifikasi individu berisiko tinggi dan memberikan rekomendasi preventif yang lebih terarah.
+
+Dengan demikian, terdapat kesenjangan antara tingginya kebutuhan deteksi dini hipertensi sebagai faktor risiko utama PKV dan keterbatasan alat prediksi risiko yang praktis dan mudah diakses. Penelitian yang mengembangkan sistem prediksi risiko hipertensi berbasis machine learning dengan algoritma Gradient Boosting—dilengkapi antarmuka web yang mudah digunakan dan rekomendasi medis preventif—menjadi relevan untuk menjembatani kesenjangan tersebut. Penelitian ini diharapkan menghasilkan model dengan kinerja yang baik sekaligus prototipe sistem yang dapat dimanfaatkan dalam konteks skrining dan edukasi kesehatan masyarakat. 
+
+Rumusan Permasalahan
+Berdasarkan latar belakang tersebut, rumusan permasalahan yang akan diteliti dapat dirumuskan sebagai berikut:
+
+Bagaimana mengembangkan model machine learning berbasis algoritma Gradient Boosting yang mampu memprediksi risiko hipertensi dengan kinerja klasifikasi yang tinggi (misalnya ditinjau dari akurasi, F1‑score, dan ROC‑AUC) berdasarkan data faktor risiko klinis dan gaya hidup?
+
+Bagaimana merancang dan membangun sistem prediksi risiko hipertensi berbasis web yang user‑friendly, yang mengimplementasikan model tersebut dan memungkinkan pengguna memasukkan data risiko secara mudah untuk memperoleh estimasi probabilitas risiko hipertensi?
+
+Bagaimana memanfaatkan hasil prediksi model untuk menyusun dan menyajikan rekomendasi medis preventif yang relevan dan mudah dipahami, sehingga sistem dapat berfungsi sebagai alat bantu skrining dan edukasi bagi masyarakat serta mendukung pengambilan keputusan tenaga kesehatan?
+
+Sejauh mana sistem prediksi risiko hipertensi berbasis machine learning ini berpotensi mendukung upaya deteksi dini dan pencegahan penyakit kardiovaskular dalam konteks keterbatasan akses skrining kesehatan rutin di masyarakat?
+
+Urgensi Penelitian
+Urgensi penelitian ini dapat dilihat dari beberapa aspek. Pertama, dari aspek kesehatan masyarakat, hipertensi sebagai faktor risiko utama PKV dengan proporsi kontribusi besar terhadap kematian akibat stroke dan penyakit jantung koroner menuntut adanya upaya deteksi dini yang lebih efektif dan terjangkau. Kedua, dari aspek layanan kesehatan, keterbatasan akses skrining rutin dan ketiadaan alat bantu prediksi risiko yang praktis menyebabkan banyak kasus hipertensi tidak terdeteksi hingga terjadi komplikasi, sehingga menurunkan efektivitas intervensi dan meningkatkan beban biaya kesehatan. Ketiga, dari aspek ilmiah dan teknologi, penerapan algoritma Gradient Boosting dalam pengembangan model prediksi risiko hipertensi pada data populasi lokal berpotensi memberikan bukti empiris mengenai keandalan metode ini dan memperkaya literatur di bidang kesehatan digital dan data-driven prevention.
+
+Keempat, dari aspek implementasi praktis, pengembangan sistem berbasis web yang dapat diakses secara gratis dan mudah digunakan oleh masyarakat maupun tenaga kesehatan dapat menjadi inovasi penting dalam mendukung program skrining dan pencegahan PKV. Sistem ini dapat membantu mengidentifikasi individu berisiko tinggi sejak dini, mendorong mereka untuk melakukan pemeriksaan klinis lebih lanjut, serta memberikan rekomendasi perilaku hidup sehat sebagai langkah preventif. Oleh karena itu, penelitian ini penting dan mendesak dilakukan untuk mengintegrasikan kekuatan machine learning dan sistem informasi kesehatan dalam upaya menurunkan beban hipertensi dan penyakit kardiovaskular di masyarakat.
+

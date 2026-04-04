@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Menggunakan Model Hipertensi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+        
+        .steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        
+        .step-card {
+            background: white;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .step-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+        
+        .step-number {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+        
+        .step-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.3em;
+        }
+        
+        .step-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        
+        .code-box {
+            background: #f5f5f5;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+        
+        .code-box code {
+            color: #333;
+        }
+        
+        .example-section {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .example-section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .notebook-location {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        
+        .notebook-location h3 {
+            color: #ff9800;
+            margin-bottom: 10px;
+        }
+        
+        .notebook-location ul {
+            list-style-position: inside;
+            line-height: 2;
+        }
+        
+        .notebook-location li {
+            margin-left: 20px;
+        }
+        
+        .highlight-green {
+            background: #c8e6c9;
+            padding: 2px 6px;
+            border-radius: 3px;
+            color: #1b5e20;
+            font-weight: bold;
+        }
+        
+        .output-box {
+            background: #1e1e1e;
+            color: #00ff00;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 15px 0;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+        
+        .footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔬 Tutorial: Menggunakan Model Prediksi Hipertensi</h1>
+            <p>Panduan Step-by-Step untuk Menggunakan model_hipertensi.pkl</p>
+        </div>
+        
+        <div class="notebook-location">
+            <h3>📍 Lokasi di Notebook Anda:</h3>
+            <ul>
+                <li><span class="highlight-green">Cell 16</span> - Markdown: Judul Tutorial</li>
+                <li><span class="highlight-green">Cell 17</span> - Python: Step 1 - Load Model</li>
+                <li><span class="highlight-green">Cell 18</span> - Python: Step 2 - Data Pasien</li>
+                <li><span class="highlight-green">Cell 19</span> - Python: Step 3 - DataFrame</li>
+                <li><span class="highlight-green">Cell 20</span> - Python: Step 4 - Prediksi</li>
+                <li><span class="highlight-green">Cell 21</span> - Markdown: Judul Interpretasi</li>
+                <li><span class="highlight-green">Cell 22</span> - Python: Step 5 - Hasil & Rekomendasi</li>
+            </ul>
+        </div>
+        
+        <div class="steps">
+            <div class="step-card">
+                <div class="step-number">1️⃣</div>
+                <h3>Load Model</h3>
+                <p>Buka file model_hipertensi.pkl menggunakan pickle</p>
+                <div class="code-box"><code>with open('model_hipertensi.pkl', 'rb') as file:
+    model = pickle.load(file)</code></div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">2️⃣</div>
+                <h3>Data Pasien</h3>
+                <p>Siapkan data pasien dalam bentuk dictionary dengan 10 fitur</p>
+                <div class="code-box"><code>pasien = {
+    'Age': 52,
+    'Salt_Intake': 11.5,
+    'Stress_Score': 7,
+    ...
+}</code></div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">3️⃣</div>
+                <h3>DataFrame</h3>
+                <p>Konversi dictionary menjadi pandas DataFrame</p>
+                <div class="code-box"><code>df = pd.DataFrame([pasien])</code></div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">4️⃣</div>
+                <h3>Prediksi</h3>
+                <p>Gunakan model untuk prediksi risiko hipertensi</p>
+                <div class="code-box"><code>hasil = model.predict(df)[0]
+proba = model.predict_proba(df)[0]</code></div>
+            </div>
+            
+            <div class="step-card">
+                <div class="step-number">5️⃣</div>
+                <h3>Hasil</h3>
+                <p>Interpretasi dan tampilkan hasil prediksi dengan rekomendasi</p>
+                <div class="code-box"><code>if hasil == 1:
+    print("⚠️ BERISIKO")
+else:
+    print("✓ TIDAK BERISIKO")</code></div>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <h2>📌 Contoh Output dari Cell 22 (Interpretasi Hasil)</h2>
+            <div class="output-box">
+======================================================================<br>
+HASIL PREDIKSI RISIKO HIPERTENSI<br>
+======================================================================<br>
+<br>
+PROFIL PASIEN:<br>
+  Usia              : 52 tahun<br>
+  BMI               : 29.5<br>
+  Asupan Garam      : 11.5 g/hari<br>
+  Skor Stress       : 7/10<br>
+  Durasi Tidur      : 5.5 jam/hari<br>
+  Riwayat TD        : Prehypertension<br>
+  Riwayat Keluarga  : Yes<br>
+  Status Merokok    : Ex-Smoker<br>
+  Level Olahraga    : Low<br>
+  Medikasi          : Beta Blocker<br>
+<br>
+----------------------------------------------------------------------<br>
+HASIL ANALISIS:<br>
+----------------------------------------------------------------------<br>
+<br>
+Status           : ⚠️  BERISIKO HIPERTENSI<br>
+Confidence Level : MERAH<br>
+<br>
+Probabilitas:<br>
+  • Tidak Berisiko : 18.11%<br>
+  • Berisiko       : 81.89%<br>
+            </div>
+        </div>
+        
+        <div class="example-section">
+            <h2>🎯 Cara Mengakses Cell-Cell Ini di Notebook</h2>
+            <p style="margin-bottom: 15px;">Di Jupyter Notebook Anda (<strong>Untitled-1.ipynb</strong>), scroll ke bawah hingga Anda melihat:</p>
+            
+            <ol style="margin-left: 20px; line-height: 2;">
+                <li>Bagian dengan heading "<strong>## 15. Ringkasan Performa Semua Model</strong>" ← Ini adalah cell terakhir dari tutorial awal</li>
+                <li>Dibawahnya ada heading "<strong>## 16. Tutorial Step-by-Step: Cara Menggunakan Model yang Sudah Disimpan</strong>" ← Ini mulai tutorial baru</li>
+                <li>Kemudian ada 5-7 cell berikutnya yang adalah bagian dari tutorial step-by-step</li>
+            </ol>
+            
+            <p style="margin-top: 20px;"><strong>Cara menjalankan:</strong></p>
+            <ul style="margin-left: 40px; margin-top: 10px;">
+                <li>Klik pada setiap cell (nomor cell ditampilkan di sebelah kiri)</li>
+                <li>Tekan tombol ▶ atau gunakan Shift+Enter untuk menjalankan</li>
+                <li>Output akan muncul di bawah setiap cell</li>
+            </ul>
+        </div>
+        
+        <div class="example-section">
+            <h2>✅ Checklist: Apa yang Akan Anda Lihat</h2>
+            <ul style="margin-left: 20px; line-height: 2;">
+                <li>✓ Model berhasil di-load dari file</li>
+                <li>✓ Data pasien ditampilkan dengan semua 10 fitur</li>
+                <li>✓ DataFrame dibuat dengan shape (1, 10)</li>
+                <li>✓ Prediksi dilakukan dan probabilitas ditampilkan</li>
+                <li>✓ Hasil akhir menunjukkan status berisiko atau tidak berisiko</li>
+                <li>✓ Rekomendasi medis ditampilkan berdasarkan hasil</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>🎓 Tutorial ini akan memandu Anda step-by-step dalam menggunakan model machine learning</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">Dibuat: December 11, 2025</p>
+        </div>
+    </div>
+</body>
+</html>

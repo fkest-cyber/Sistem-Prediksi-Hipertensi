@@ -1,0 +1,77 @@
+@article{Estiko2021,
+  author = {Estiko, S. and Widyantoro, R. and Arymurthy, A. M.},
+  title = {Prediction of hypertension risks with feature selection and {XGBoost}},
+  journal = {Journal of Mechanics in Medicine and Biology},
+  year = {2021},
+  volume = {21},
+  number = {4},
+  pages = {2140028},
+  doi = {10.1142/S0219519421400285}
+}
+
+@article{Islam2022,
+  author = {Islam, S. M. S. and Wang, L. and Hu, H. and others},
+  title = {Machine learning approaches for predicting hypertension and its 
+           associated factors using population-level data from three 
+           {South Asian} countries},
+  journal = {Frontiers in Cardiovascular Medicine},
+  year = {2022},
+  volume = {9},
+  pages = {839379},
+  month = {Mar},
+  doi = {10.3389/fcvm.2022.839379}
+}
+
+@article{Du2023,
+  author = {Du, J. and Yang, S. and Zhang, Y. and Wang, J. and Hong, C. and 
+            Gu, Y. and Zhang, Y. and Xu, W.},
+  title = {Developing a hypertension visualization risk prediction system 
+           based on machine learning and {SHAP}},
+  journal = {Scientific Reports},
+  year = {2023},
+  volume = {13},
+  pages = {21045},
+  month = {Nov},
+  doi = {10.1038/s41598-023-46281-y}
+}
+
+@article{Hwang2024,
+  author = {Hwang, S. H. and Kim, T. S. and Park, M. J. and Choi, J. H. and 
+            Lee, S. Y.},
+  title = {Machine learning--based prediction for incident hypertension: 
+           {D}evelopment and validation using a nationwide health screening cohort},
+  journal = {Journal of Medical Internet Research},
+  year = {2024},
+  volume = {26},
+  number = {1},
+  pages = {e52794},
+  month = {Nov},
+  doi = {10.2196/52794}
+}
+
+@article{Donmez2024,
+  author = {Donmez, T. B. and Wang, G. and Chen, H. and Zhang, P.},
+  title = {Explainable {AI} in action: {A} comparative analysis of hypertension 
+           risk prediction models using {SHAP}},
+  journal = {Neural Computing and Applications},
+  year = {2024},
+  volume = {36},
+  pages = {32145--32161},
+  doi = {10.1007/s00521-024-10724-y}
+}
+
+@inproceedings{Nakawuki2024,
+  author = {Nakawuki, R. and Kezimbira, D. and Atukunda, P. K. and Sempa, J. and 
+            Kawooya, F.},
+  title = {Using machine learning and explainable {AI} to predict lifestyle-driven 
+           hypertension risk in {Uganda's WHO STEPS 2023} survey},
+  booktitle = {Proceedings of the National Annual Communicable and Non-Communicable 
+               Diseases Conference (NACNDC) and 19th Joint Annual Scientific Health 
+               (JASH) Conference 2025},
+  journal = {Journal of Interventional Epidemiology and Public Health},
+  year = {2024},
+  volume = {8},
+  pages = {NACNDC/19JASH057},
+  month = {Dec},
+  note = {Conference Abstract}
+}
