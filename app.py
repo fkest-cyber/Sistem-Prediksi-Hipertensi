@@ -304,7 +304,7 @@ st.sidebar.markdown("### 👨‍💻 Developer")
 st.sidebar.markdown("""
 **Sistem Prediksi Hipertensi**
 
-Powered by: Rudiansyah
+Powered by: Yeli Deska Mecca
 - Python 🐍
 - Streamlit 🎈
 - Scikit-learn 🤖
